@@ -1,71 +1,11 @@
----
-title: "AGENTS.md — AI操作规则"
-date: YYYY-MM-DD
-type: framework
-tags:
-  - 核心/项目配置
----
+# AI Operation Rules
 
-# AGENTS.md
+Before maintaining this knowledge base, read:
 
-本知识库的 AI 操作规则。每次开始工作前先读此文件。
+1. `AGENTS.md`
+2. `index.md`
+3. `00_schema/references/resolver.md`
+4. `00_schema/references/sync-policy.md`
 
-## 知识库基本信息
+Use `.agents/skills/kb-organize/SKILL.md` as the canonical Skill when available.
 
-- 所有者：（填你的名字）
-- 核心叙事锚点：[[概念/（填你最核心的概念名称）]]
-- 主要服务对象：（描述你服务的人群或自己的使用场景）
-- 主要产出：（列出你主要输出的内容类型）
-
-## 文件夹结构
-
-```
-知识库根目录/
-├── 00_schema/                  ← AI 规则文件，每次先读
-│   ├── AGENTS.md               ← 本文件
-│   ├── SKILL.md                ← 整理技能详细说明
-│   └── references/
-│       ├── tag-taxonomy.md
-│       └── templates.md
-├── 概念/                       ← 主知识层，AI 重点维护
-├── （你的原创内容文件夹）/
-├── （你的参考资料文件夹）/
-├── （外部素材文件夹，只读）/
-├── index.md                    ← 主知识导航
-└── sources.md                  ← 外部素材导航
-```
-
-## 核心操作规则
-
-### 每次工作前
-1. Read index.md 了解当前结构
-2. Read 本文件（AGENTS.md）确认规则
-3. 如需整理文件，Read 00_schema/SKILL.md
-
-### 摄入新内容时（Ingest）
-1. 判断是"你的内容"还是"外部素材"
-2. 外部素材：只读，不修改，提炼洞察写进概念页
-3. 你的内容：按 templates.md 模板建文件
-4. 更新相关概念页的"相关文档"
-5. 在概念页时间线追加一行记录
-6. 在 index.md 摄入记录区块追加一行
-
-### 更新概念页时
-1. "当前判断"区块：改写为最新结论
-2. "核心要点"：可追加，不删除历史内容
-3. "时间线"：只追加，永不删改历史记录
-   格式：`- YYYY-MM-DD | 操作描述 → 主要变更`
-
-### 维护检查时（Lint，建议每月一次）
-检查以下项目：
-- 有没有新文章忘记链接到概念页
-- 有没有概念页数据需要更新
-- 有没有孤立文件（无标签无链接）
-- 摄入记录是否及时更新
-
-## 严格禁止
-
-- 不修改外部素材文件夹的任何原始文件
-- 不处理任何客户个人信息（姓名、证件、保单号）
-- 不删除时间线的历史记录
-- 不删除用户手动添加的内容

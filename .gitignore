@@ -1,19 +1,11 @@
-# macOS 系统文件（比如你之前的 .DS_Store）
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# 编辑器配置文件（VS Code、Obsidian等）
-.vscode/
-.idea/
- *.swp
- *.swo
- *~
- .obsidian/workspace
- .obsidian/last-open
-
-# 临时文件、日志
-*.tmp
+.obsidian/workspace*.json
+.obsidian/cache/
+.trash/
+node_modules/
+.env
+.env.*
 *.log
+*.tmp
 *.bak
+

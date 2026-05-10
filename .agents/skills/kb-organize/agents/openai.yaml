@@ -1,0 +1,8 @@
+interface:
+  display_name: "KB Organize"
+  short_description: "维护 Obsidian 知识库的索引、双链和规则"
+  default_prompt: "Use $kb-organize to maintain my Obsidian knowledge base safely."
+
+policy:
+  allow_implicit_invocation: true
+
